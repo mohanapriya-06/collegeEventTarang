@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TARANG</title>
+
+<style>
+body {
+    background-color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+#banner {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    animation: show 2s;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+#event-details {
+    border: 3px solid grey;
+    background-color: lightblue;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    line-height: 1.5;
+    animation: left 1.5s;
+}
+
+
+#registration-events {
+    border: 3px solid grey;
+    background-color: lightpink;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    line-height: 1.5;
+    animation: right 1.5s;
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#event-details h1,
+#registration-events h1 {
+    color: black;
+}
+
+#event-details h3,
+#registration-events h3 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.5s;
+}
+
+#event-details h3:hover,
+#registration-events h3:hover {
+    background-color: grey;
+    transform: scale(1.05);
+    color: white;
+}
+
+#event-details p,
+#registration-events p {
+    color: black;
+    padding: 5px;
+}
+
+#event-details:hover,
+#registration-events:hover {
+    box-shadow: 8px 8px 20px gray;
+    transform: scale(1.02);
+}
+
+button {
+    background-color: grey;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: desk 1s 3;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px gray;
+}
+
+@keyframes desk {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #event-details,
+    #registration-events {
+        width: 100%;
+    }
+
+    #banner h1 {
+        font-size: 24px;
+    }
+
+    #banner p {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="banner">
+    <h1>STC | Pollachi</h1>
+    <h2>TARANG</h2>
+    <p>INTER COLLEGE MEET</p>
+    <p>Date: 09-10-2026</p>
+    <p>Time: 10:00 AM to 8:00 PM</p>
+</div>
+
+<div id="details">
+
+    <!-- Event Details -->
+    <div id="event-details">
+        <h1>Event Details</h1>
+
+        <h3>Quiz</h3>
+        <p>Test your knowledge!</p>
+
+        <h3>Connection</h3>
+        <p>Find the correct connection!</p>
+
+        <h3>Dancing</h3>
+        <p>Show your dancing talent!</p>
+
+        <h3>Face Painting</h3>
+        <p>Show your creativity with colours!</p>
+
+        <h3>Singing</h3>
+        <p>Show your singing talent!</p>
+
+        <h3>Photography</h3>
+        <p>Capture beautiful moments!</p>
+
+        <h3>Wealth from Waste</h3>
+        <p>Create useful things from waste materials!</p>
+    </div>
+
+       
+<div id="registration-events">
+    <h1>Registration Details</h1>
+
+    <h3>Registration Fee: ₹200</h3>
+    <h3>Last Date: 08-10-2026</h3>
+    <h3>Venue: STC, Pollachi</h3>
+
+    <h3>Eligibility</h3>
+    <p>All College Students Can Participate!</p>
+
+    <h3>Team Size</h3>
+    <p>Individual and Team Participation</p>
+
+    <h3>Prizes</h3>
+    <p>Exciting cash Prizes for Winners!</p>
+
+    <h3>Contact</h3>
+    <p>Contact:SHREYA(MCA)</p>
+    <p>LEKA(MCA(HOD))</p>
+    <h3>Instructions</h3>
+    <p>Bring Your College ID Card.</p>
+    <p>Report Before 10:00 AM.</p>
+    <p>Participate in your favourite events!</p>
+    <p>Show your talent and win exciting prizes!</p>
+    <p>Join us and make this event memorable!</p>
+    <p>Come and join us for the DJ event too!</p>
+</div>
+</div>
+
+<center>
+    <button>Submit</button>
+</center>
+
+</body>
+</html>
